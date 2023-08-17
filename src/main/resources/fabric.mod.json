@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "desertoverhaul",
+	"version": "${version}",
+	"name": "Desert Overhaul",
+	"description": "Overhauls the desert biome!",
+	"authors": [
+		"WiseMango"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/desertoverhaul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.mango.desertoverhaul.DesertOverhaul"
+		],
+		"client": [
+			"net.mango.desertoverhaul.DesertOverhaulClient"
+		],
+		"fabric-datagen": [
+			"net.mango.desertoverhaul.DesertOverhaulDataGenerator"
+		]
+	},
+	"mixins": [
+		"desertoverhaul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
