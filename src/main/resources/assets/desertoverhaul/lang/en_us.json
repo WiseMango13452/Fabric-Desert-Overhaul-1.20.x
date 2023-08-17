@@ -1,3 +1,6 @@
 {
-  "block.desertoverhaul.palm_log": "Palm Log"
+  "block.desertoverhaul.palm_log": "Palm Log",
+  "block.desertoverhaul.palm_leaves": "Palm Leaves",
+
+  "itemgroup.mod": "Desert Overhaul"
 }

@@ -3,6 +3,7 @@ package net.mango.desertoverhaul;
 import net.fabricmc.api.ModInitializer;
 
 import net.mango.desertoverhaul.block.ModBlocks;
+import net.mango.desertoverhaul.item.ModItemGroups;
 import net.mango.desertoverhaul.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,7 @@ public class DesertOverhaul implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
