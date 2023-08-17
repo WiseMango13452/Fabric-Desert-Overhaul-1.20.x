@@ -1,5 +1,5 @@
 {
-  "parent": "desertoverhaul:block/cube_column",
+  "parent": "desertoverhaul:block/cube_column_horizontal",
   "textures": {
     "end": "desertoverhaul:block/palm_log_top",
     "side": "desertoverhaul:block/palm_log"
