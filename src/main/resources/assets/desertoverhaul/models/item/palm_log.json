@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "end": "minecraft:block/palm_log_top",
+    "side": "minecraft:block/palm_log"
+  }
+}
