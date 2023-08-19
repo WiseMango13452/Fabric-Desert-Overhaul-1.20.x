@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.mango.desertoverhaul.DesertOverhaul;
+import net.mango.desertoverhaul.item.ModItemGroups;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.client.color.block.BlockColors;
@@ -22,11 +23,28 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    //palm tree
+
     public static final Block PALM_LOG = registerBlock("palm_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG)));
+    public static final Block PALM_WOOD = registerBlock("palm_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_WOOD)));
+    public static final Block STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_LOG)));
+    public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_WOOD)));
 
-    public static final Block PALM_LEAVES = Blocks.register("palm_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES)));
+    public static final Block PALM_PLANKS = registerBlock("palm_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS)));
+    public static final Block PALM_LEAVES = registerBlock("palm_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).sounds(BlockSoundGroup.AZALEA_LEAVES)));
+
+    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
+            new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.JUNGLE_SAPLING)));
+
+
+
+    //-palm tree
 
     private static void addBlockToBuildingBlockGroup(FabricItemGroupEntries entries) {
         entries.add(PALM_LOG);

@@ -1,6 +1,0 @@
-{
-  "parent": "block/leaves",
-  "textures": {
-    "all": "desertoverhaul:block/palm_leaves"
-  }
-}

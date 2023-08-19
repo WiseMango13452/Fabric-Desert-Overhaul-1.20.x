@@ -1,6 +1,11 @@
 {
   "block.desertoverhaul.palm_log": "Palm Log",
+  "block.desertoverhaul.palm_wood": "Palm Wood",
+  "block.desertoverhaul.stripped_palm_log": "Stripped Palm Log",
+  "block.desertoverhaul.stripped_palm_wood": "Stripped Palm Log",
+  "block.desertoverhaul.palm_planks": "Palm Planks",
   "block.desertoverhaul.palm_leaves": "Palm Leaves",
+  "block.desertoverhaul.palm_sapling": "Palm Sapling",
 
   "itemgroup.mod": "Desert Overhaul"
 }

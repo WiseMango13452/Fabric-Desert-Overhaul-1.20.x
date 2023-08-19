@@ -19,7 +19,14 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.PALM_LOG))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PALM_LOG);
+                        entries.add(ModBlocks.PALM_WOOD);
+                        entries.add(ModBlocks.STRIPPED_PALM_LOG);
+                        entries.add(ModBlocks.STRIPPED_PALM_WOOD);
+
+                        entries.add(ModBlocks.PALM_PLANKS);
                         entries.add(ModBlocks.PALM_LEAVES);
+
+                        entries.add(ModBlocks.PALM_SAPLING);
 
                     }).build());
 
