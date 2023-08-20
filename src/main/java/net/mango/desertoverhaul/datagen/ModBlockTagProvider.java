@@ -29,5 +29,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PALM_WOOD)
                 .add(ModBlocks.STRIPPED_PALM_LOG)
                 .add(ModBlocks.STRIPPED_PALM_WOOD);
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.PALM_LOG)
+                .add(ModBlocks.PALM_WOOD)
+                .add(ModBlocks.STRIPPED_PALM_LOG)
+                .add(ModBlocks.STRIPPED_PALM_WOOD);
     }
 }

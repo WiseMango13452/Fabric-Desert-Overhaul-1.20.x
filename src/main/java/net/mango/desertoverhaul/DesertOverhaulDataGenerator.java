@@ -3,6 +3,10 @@ package net.mango.desertoverhaul;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.mango.desertoverhaul.datagen.*;
+import net.mango.desertoverhaul.world.ModConfiguredFeatures;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 
 public class DesertOverhaulDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -14,5 +18,11 @@ public class DesertOverhaulDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 	}
 }
