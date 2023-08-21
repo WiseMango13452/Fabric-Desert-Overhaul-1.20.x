@@ -2,7 +2,8 @@ package net.mango.desertoverhaul.world;
 
 import net.mango.desertoverhaul.DesertOverhaul;
 import net.mango.desertoverhaul.block.ModBlocks;
-import net.mango.desertoverhaul.world.tree.PalmTrunkPlacer;
+import net.mango.desertoverhaul.world.tree.foliage.PalmFoliagePlacer;
+import net.mango.desertoverhaul.world.tree.trunk.PalmTrunkPlacer;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -25,9 +26,10 @@ public class ModConfiguredFeatures {
 
         register(context, PALM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
-                new PalmTrunkPlacer(1, 1, 2, 6, UniformIntProvider.create(1, 2)),
+                //change settings in 'PalmTrunkPlacer.java' V V V
+                new PalmTrunkPlacer(4, 2, 0, 0, UniformIntProvider.create(0,0)),
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
-                new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0)),
+                new PalmFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0)),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 

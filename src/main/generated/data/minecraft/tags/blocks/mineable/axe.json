@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "desertoverhaul:palm_log",
+    "desertoverhaul:palm_wood",
+    "desertoverhaul:stripped_palm_log",
+    "desertoverhaul:stripped_palm_wood",
+    "desertoverhaul:palm_planks"
+  ]
+}

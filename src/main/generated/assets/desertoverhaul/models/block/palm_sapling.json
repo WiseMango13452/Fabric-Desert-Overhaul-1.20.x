@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "desertoverhaul:block/palm_sapling"
+  }
+}
